@@ -6,7 +6,17 @@ namespace GenericList
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            GenericList<int> list = new GenericList<int>();
+            for (int i = 0; i < 10; i++)
+            {
+                list.AddHead(i);
+            }
+
+            foreach (int i in list)
+            {
+                Console.WriteLine(i);
+            }
         }
+        
     }
 }
